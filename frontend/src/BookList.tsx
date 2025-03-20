@@ -19,7 +19,9 @@ function BookList() {
 
   useEffect(() => {
     const fetchBooks = async () => {
-      const response = await fetch(dataSource);
+      const response = await fetch(dataSource, {
+        credentials: "include",
+      });
       const data = await response.json();
       setBooks(data.books);
       setTotalItems(data.totalNumBooks);

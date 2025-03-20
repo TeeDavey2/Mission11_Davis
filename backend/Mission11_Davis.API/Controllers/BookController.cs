@@ -14,6 +14,17 @@ namespace Mission11_Davis.API.Controllers
         [HttpGet("AllBooks")]
         public IActionResult GetBooks(int pageSize = 5, int pageNum = 1)
         {
+            string? favCategory = Request.Cookies["FavoriteCategory"];
+            Console.WriteLine("--------COOKIE---------\n" + favCategory);
+
+            HttpContext.Response.Cookies.Append("FavoriteCategory", "Classic", new CookieOptions
+            {
+                HttpOnly = true,
+                Secure = true,
+                SameSite = SameSiteMode.Strict,
+                Expires = DateTime.Now.AddMinutes(5),
+            });
+
             var bookList = _bookContext.Books
             .Skip((pageNum - 1) * pageSize)
             .Take(pageSize)
@@ -33,6 +44,17 @@ namespace Mission11_Davis.API.Controllers
         [HttpGet("SortTitle")]
         public IActionResult GetSortedBooks(int pageSize = 5, int pageNum = 1)
         {
+            string? favCategory = Request.Cookies["FavoriteCategory"];
+            Console.WriteLine("--------COOKIE---------\n" + favCategory);
+
+            HttpContext.Response.Cookies.Append("FavoriteCategory", "Classic", new CookieOptions
+            {
+                HttpOnly = true,
+                Secure = true,
+                SameSite = SameSiteMode.Strict,
+                Expires = DateTime.Now.AddMinutes(5),
+            });
+
             var bookList = _bookContext.Books
             .OrderBy(b => b.Title)
             .Skip((pageNum - 1) * pageSize)
