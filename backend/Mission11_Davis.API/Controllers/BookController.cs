@@ -12,17 +12,42 @@ namespace Mission11_Davis.API.Controllers
         public BookController(BookDbContext temp) => _bookContext = temp;
 
         [HttpGet("AllBooks")]
-        public IEnumerable<Book> GetBooks()
+        public IActionResult GetBooks(int pageSize = 5, int pageNum = 1)
         {
-            var bookList = _bookContext.Books.ToList();
-            return bookList;
+            var bookList = _bookContext.Books
+            .Skip((pageNum - 1) * pageSize)
+            .Take(pageSize)
+            .ToList();
+
+            var totalNumBooks = _bookContext.Books.Count();
+
+            var passingData = new
+            {
+                Books = bookList,
+                TotalNumBooks = totalNumBooks
+            };
+
+            return Ok(passingData);
         }
 
         [HttpGet("SortTitle")]
-        public IEnumerable<Book> GetSortedBooks()
+        public IActionResult GetSortedBooks(int pageSize = 5, int pageNum = 1)
         {
-            var bookList = _bookContext.Books.OrderBy(b => b.Title).ToList();
-            return bookList;
+            var bookList = _bookContext.Books
+            .OrderBy(b => b.Title)
+            .Skip((pageNum - 1) * pageSize)
+            .Take(pageSize)
+            .ToList();
+
+            var totalNumBooks = _bookContext.Books.Count();
+
+            var passingData = new
+            {
+                Books = bookList,
+                TotalNumBooks = totalNumBooks
+            };
+
+            return Ok(passingData);
         }
 
     }
