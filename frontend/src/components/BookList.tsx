@@ -47,9 +47,9 @@ function BookList({ selectedCategories }: { selectedCategories: string[] }) {
       </div>
 
       {/* Book Cards */}
-      <div className="row row-cols-md-2">
+      <div className="row row-cols-md-1 row-cols-lg-2 row-cols-sm-1">
         {books.map((b) => (
-          <div className="col" key={b.bookID}>
+          <div className="col p-2" key={b.bookID}>
             <div className="card h-100 shadow-sm">
               <div className="card-body">
                 <h3 className="card-title">{b.title}</h3>

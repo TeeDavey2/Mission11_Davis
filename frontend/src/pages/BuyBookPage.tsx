@@ -8,14 +8,14 @@ function BuyBookPage() {
   const navigate = useNavigate();
   const { title, bookID, price } = useParams();
   const { addToCart } = useCart();
-  const [bookQuantity, setBookQuantity] = useState<number>(0);
+  const [quantity, setQuantity] = useState<number>(1);
 
   const handleAddToCart = () => {
     const newItem: CartItem = {
-      title: String(title) || "No Book Found",
       bookID: Number(bookID),
+      title: String(title) || "No Book Found",
       price: Number(price),
-      quantity: bookQuantity,
+      quantity,
     };
     addToCart(newItem);
     navigate("/cart");
@@ -23,31 +23,29 @@ function BuyBookPage() {
 
   return (
     <>
-      <div className="container">
-        <WelcomeHeader />
-        <div className="container">
-          <h2>Add {title} to Cart</h2>
-        </div>
-        <div className="container pt-4">
-          <input
-            className="form-control"
-            type="number"
-            placeholder="Qty"
-            min={0}
-            value={bookQuantity}
-            onChange={(x) => setBookQuantity(Number(x.target.value))}
-          />
-        </div>
-        <div className="container pt-4">
-          <button className="btn btn-success" onClick={handleAddToCart}>
-            Add to Cart
-          </button>
-        </div>
-        <div className="container pt-4">
-          <button className="btn btn-primary" onClick={() => navigate(-1)}>
-            Continue Shopping
-          </button>
-        </div>
+      <WelcomeHeader />
+      <div className="container-fluid">
+        <h2>Add {title} to Cart</h2>
+      </div>
+      <div className="container-fluid pt-4 w-75">
+        <input
+          className="form-control"
+          type="number"
+          placeholder="Qty"
+          min={1}
+          value={quantity}
+          onChange={(x) => setQuantity(Number(x.target.value))}
+        />
+      </div>
+      <div className="container-fluid pt-4">
+        <button className="btn btn-success w-75" onClick={handleAddToCart}>
+          Add to Cart
+        </button>
+      </div>
+      <div className="container-fluid pt-4">
+        <button className="btn btn-primary w-50" onClick={() => navigate(-1)}>
+          Continue Shopping
+        </button>
       </div>
     </>
   );
