@@ -8,6 +8,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   //Making global functions
 
+  //*************FOR THE TA***************
+  // NEW BOOTSTRAP REQUIREMENT
+  // 1. Used container-fluid for better organization and flexibility
+  // 2. Learned how to centralize rows using mx-auto
+  // 3. Customized button sizes in BuyBookPage and CartPage using w-*
+
   return (
     <div className="main-content">
       {/* ROUTING */}

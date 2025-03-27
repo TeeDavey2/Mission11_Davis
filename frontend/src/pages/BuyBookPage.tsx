@@ -10,6 +10,7 @@ function BuyBookPage() {
   const { addToCart } = useCart();
   const [quantity, setQuantity] = useState<number>(1);
 
+  // ADDING TO CART FUNCTION
   const handleAddToCart = () => {
     const newItem: CartItem = {
       bookID: Number(bookID),
@@ -27,21 +28,29 @@ function BuyBookPage() {
       <div className="container-fluid">
         <h2>Add {title} to Cart</h2>
       </div>
-      <div className="container-fluid pt-4 w-75">
-        <input
-          className="form-control"
-          type="number"
-          placeholder="Qty"
-          min={1}
-          value={quantity}
-          onChange={(x) => setQuantity(Number(x.target.value))}
-        />
+
+      {/* USING BOOTSTRAP GRID */}
+      <div className="row align-items-center">
+        {/* INPUT FOR QUANTITY */}
+        <div className="col-md-6 col-lg-6">
+          <input
+            className="form-control"
+            type="number"
+            placeholder="Qty"
+            min={1}
+            value={quantity}
+            onChange={(x) => setQuantity(Number(x.target.value))}
+          />
+        </div>
+        {/* BUTTON TO ADD TO CART */}
+        <div className="col-md-6 col-lg-6">
+          <button className="btn btn-success w-75" onClick={handleAddToCart}>
+            Add to Cart
+          </button>
+        </div>
       </div>
-      <div className="container-fluid pt-4">
-        <button className="btn btn-success w-75" onClick={handleAddToCart}>
-          Add to Cart
-        </button>
-      </div>
+
+      {/* CONTINUE SHOPPING BUTTON */}
       <div className="container-fluid pt-4">
         <button className="btn btn-primary w-50" onClick={() => navigate(-1)}>
           Continue Shopping
