@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\GetTD\\OneDrive\\Desktop\\Mission11_Davis\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9502D51B-CD47-FD93-8B2D-7C4F861FC3CD}|backend\\Mission11_Davis.API\\Mission11_Davis.API.csproj|c:\\users\\gettd\\onedrive\\desktop\\mission11_davis\\backend\\mission11_davis.api\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{9502D51B-CD47-FD93-8B2D-7C4F861FC3CD}|backend\\Mission11_Davis.API\\Mission11_Davis.API.csproj|solutionrelative:backend\\mission11_davis.api\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9502D51B-CD47-FD93-8B2D-7C4F861FC3CD}|backend\\Mission11_Davis.API\\Mission11_Davis.API.csproj|c:\\users\\gettd\\onedrive\\desktop\\mission11_davis\\backend\\mission11_davis.api\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9502D51B-CD47-FD93-8B2D-7C4F861FC3CD}|backend\\Mission11_Davis.API\\Mission11_Davis.API.csproj|solutionrelative:backend\\mission11_davis.api\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,25 +43,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\GetTD\\OneDrive\\Desktop\\Mission11_Davis\\backend\\Mission11_Davis.API\\.gitignore",
+              "RelativeDocumentMoniker": "backend\\Mission11_Davis.API\\.gitignore",
+              "ToolTip": "C:\\Users\\GetTD\\OneDrive\\Desktop\\Mission11_Davis\\backend\\Mission11_Davis.API\\.gitignore",
+              "RelativeToolTip": "backend\\Mission11_Davis.API\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-26T19:15:17.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "BookController.cs",
               "DocumentMoniker": "C:\\Users\\GetTD\\OneDrive\\Desktop\\Mission11_Davis\\backend\\Mission11_Davis.API\\Controllers\\BookController.cs",
               "RelativeDocumentMoniker": "backend\\Mission11_Davis.API\\Controllers\\BookController.cs",
               "ToolTip": "C:\\Users\\GetTD\\OneDrive\\Desktop\\Mission11_Davis\\backend\\Mission11_Davis.API\\Controllers\\BookController.cs",
               "RelativeToolTip": "backend\\Mission11_Davis.API\\Controllers\\BookController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAkwDYAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAcwCwAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-19T19:34:47.074Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\GetTD\\OneDrive\\Desktop\\Mission11_Davis\\backend\\Mission11_Davis.API\\Program.cs",
               "RelativeDocumentMoniker": "backend\\Mission11_Davis.API\\Program.cs",
               "ToolTip": "C:\\Users\\GetTD\\OneDrive\\Desktop\\Mission11_Davis\\backend\\Mission11_Davis.API\\Program.cs",
               "RelativeToolTip": "backend\\Mission11_Davis.API\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwCQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-19T19:18:43.786Z",
               "EditorCaption": ""

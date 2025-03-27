@@ -1,0 +1,54 @@
+[
+  {
+    "ContainingType": "Mission11_Davis.API.Controllers.BookController",
+    "Method": "GetBooks",
+    "RelativePath": "Book/AllBooks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageNum",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Mission11_Davis.API.Controllers.BookController",
+    "Method": "GetBookCategories",
+    "RelativePath": "Book/GetBookCategories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Mission11_Davis.API.Controllers.BookController",
+    "Method": "GetSortedBooks",
+    "RelativePath": "Book/SortTitle",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageNum",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Book } from "./types/Book";
 
-function BookList() {
+function BookList({ selectedCategories }: { selectedCategories: string[] }) {
   const [books, setBooks] = useState<Book[]>([]);
   const [pageSize, setPageSize] = useState<number>(5);
   const [pageNum, setPageNum] = useState<number>(1);
@@ -13,15 +13,19 @@ function BookList() {
     setSortByTitle(!sortByTitle);
   };
 
-  const dataSource = sortByTitle
-    ? `https://localhost:5001/Book/SortTitle?pageSize=${pageSize}&pageNum=${pageNum}`
-    : `https://localhost:5001/Book/AllBooks?pageSize=${pageSize}&pageNum=${pageNum}`;
-
   useEffect(() => {
     const fetchBooks = async () => {
+      const categoryParams = selectedCategories
+        .map((cat) => `categories=${encodeURIComponent(cat)}`)
+        .join("&");
+
+      // Define the data source
+      const dataSource = `https://localhost:5001/Book/AllBooks?pageSize=${pageSize}&pageNum=${pageNum}${selectedCategories.length ? `&${categoryParams}` : ""}&sortByTitle=${sortByTitle}`;
+
       const response = await fetch(dataSource, {
         credentials: "include",
       });
+
       const data = await response.json();
       setBooks(data.books);
       setTotalItems(data.totalNumBooks);
@@ -29,13 +33,10 @@ function BookList() {
     };
 
     fetchBooks();
-  }, [pageSize, pageNum, sortByTitle]);
+  }, [pageSize, pageNum, sortByTitle, totalItems, selectedCategories]);
 
   return (
     <div className="container my-4">
-      {/* Title */}
-      <h1 className="text-center mb-4">Books</h1>
-
       {/* Sort Button */}
       <div className="d-flex justify-content-center mb-4">
         <button className="btn btn-primary" onClick={handleSortToggle}>
@@ -44,7 +45,7 @@ function BookList() {
       </div>
 
       {/* Book Cards */}
-      <div className="row row-cols-1 row-cols-md-2 g-4">
+      <div className="row row-cols-md-2">
         {books.map((b) => (
           <div className="col" key={b.bookID}>
             <div className="card h-100 shadow-sm">

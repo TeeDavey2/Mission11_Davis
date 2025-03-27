@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mission11_Davis.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d083eba0f31e3a9d9dbf639f72d7b112c1f91b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d2f6c24b860fac13ab83c18578befb4efa36871b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mission11_Davis.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mission11_Davis.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
