@@ -70,3 +70,9 @@ C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\obj\
 C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\obj\Release\net8.0\Mission11_Davis.API.pdb
 C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\obj\Release\net8.0\Mission11_Davis.API.genruntimeconfig.cache
 C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\obj\Release\net8.0\ref\Mission11_Davis.API.dll
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\bin\Release\net8.0\publish\web.config
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\bin\Release\net8.0\publish\appsettings.Development.json
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\bin\Release\net8.0\publish\appsettings.json
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\bin\Release\net8.0\publish\Mission11_Davis.API.deps.json
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\bin\Release\net8.0\publish\Mission11_Davis.API.runtimeconfig.json
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\bin\Release\net8.0\publish\Mission11_Davis.API.staticwebassets.endpoints.json
