@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "undefined/subscriptions/0b27eb94-536a-48b7-a5ec-32b0edf420a1/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/Mission13-Davis-Backend",
+  "appService.deploySubpath": "backend\\Mission11_Davis.API\\publish"
+}
