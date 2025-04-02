@@ -1,41 +1,47 @@
 import { useEffect, useState } from "react";
 import { Book } from "../types/Book";
 import { useNavigate } from "react-router-dom";
+import { fetchBooks } from "../api/BooksAPI";
+import Pagination from "./Pagination";
 
 function BookList({ selectedCategories }: { selectedCategories: string[] }) {
   const [books, setBooks] = useState<Book[]>([]);
   const [pageSize, setPageSize] = useState<number>(5);
   const [pageNum, setPageNum] = useState<number>(1);
-  const [totalItems, setTotalItems] = useState<number>(0);
   const [totalPages, setTotalPages] = useState<number>(0);
   const [sortByTitle, setSortByTitle] = useState<boolean>(false);
   const navigate = useNavigate();
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
 
   const handleSortToggle = () => {
     setSortByTitle(!sortByTitle);
   };
 
   useEffect(() => {
-    const fetchBooks = async () => {
-      const categoryParams = selectedCategories
-        .map((cat) => `categories=${encodeURIComponent(cat)}`)
-        .join("&");
-
-      // Define the data source
-      const dataSource = `https://localhost:5001/Book/AllBooks?pageSize=${pageSize}&pageNum=${pageNum}${selectedCategories.length ? `&${categoryParams}` : ""}&sortByTitle=${sortByTitle}`;
-
-      const response = await fetch(dataSource, {
-        credentials: "include",
-      });
-
-      const data = await response.json();
-      setBooks(data.books);
-      setTotalItems(data.totalNumBooks);
-      setTotalPages(Math.ceil(totalItems / pageSize));
+    const loadBooks = async () => {
+      try {
+        setLoading(true);
+        const data = await fetchBooks(
+          pageSize,
+          pageNum,
+          selectedCategories,
+          sortByTitle
+        );
+        setBooks(data.books);
+        setTotalPages(Math.ceil(data.totalNumBooks / pageSize));
+      } catch (error) {
+        setError((error as Error).message);
+      } finally {
+        setLoading(false);
+      }
     };
 
-    fetchBooks();
-  }, [pageSize, pageNum, sortByTitle, totalItems, selectedCategories]);
+    loadBooks();
+  }, [pageSize, pageNum, selectedCategories, sortByTitle]);
+
+  if (loading) return <div>Loading books...</div>;
+  if (error) return <div className="text-red-500">Error: {error}</div>;
 
   return (
     <div className="container my-4">
@@ -91,52 +97,16 @@ function BookList({ selectedCategories }: { selectedCategories: string[] }) {
       </div>
 
       {/* Pagination */}
-      <div className="d-flex justify-content-center mt-4">
-        <button
-          className="btn btn-outline-secondary me-2"
-          disabled={pageNum === 1}
-          onClick={() => setPageNum(pageNum - 1)}
-        >
-          Previous
-        </button>
-
-        {[...Array(totalPages)].map((_, index) => (
-          <button
-            key={index + 1}
-            className={`btn btn-outline-primary mx-1 ${
-              pageNum === index + 1 ? "active" : ""
-            }`}
-            onClick={() => setPageNum(index + 1)}
-          >
-            {index + 1}
-          </button>
-        ))}
-
-        <button
-          className="btn btn-outline-secondary ms-2"
-          disabled={pageNum === totalPages}
-          onClick={() => setPageNum(pageNum + 1)}
-        >
-          Next
-        </button>
-      </div>
-
-      {/* Books per page */}
-      <div className="d-flex justify-content-center mt-3">
-        <label className="me-2">
-          Books per page:
-          <select
-            className="form-select d-inline-block w-auto ms-2"
-            value={pageSize}
-            onChange={(p) => setPageSize(parseInt(p.target.value))}
-          >
-            <option value="5">5</option>
-            <option value="10">10</option>
-            <option value="15">15</option>
-            <option value="20">20</option>
-          </select>
-        </label>
-      </div>
+      <Pagination
+        currentPage={pageNum}
+        totalPages={totalPages}
+        pageSize={pageSize}
+        onPageChange={setPageNum}
+        onPageSizeChange={(newSize) => {
+          setPageSize(newSize);
+          setPageNum(1);
+        }}
+      />
     </div>
   );
 }

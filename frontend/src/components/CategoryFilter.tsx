@@ -10,6 +10,8 @@ function CategoryFilter({
   setSelectedCategories: (categories: string[]) => void;
 }) {
   const [categories, setCategories] = useState<string[]>([]);
+  // const [sortByTitle, setSortByTitle] = useState<boolean>(false);
+
   // const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
 
   useEffect(() => {
@@ -30,6 +32,10 @@ function CategoryFilter({
   }, []);
 
   // Functions
+  // const handleSortToggle = () => {
+  //   setSortByTitle(!sortByTitle);
+  // };
+
   function handleCheckboxChange({ target }: { target: HTMLInputElement }) {
     const updatedCategories = selectedCategories.includes(target.value)
       ? // If true
@@ -60,6 +66,12 @@ function CategoryFilter({
           </div>
         ))}
       </div>
+      {/* Sort Button */}
+      {/* <div className="d-flex justify-content-center mb-4">
+          <button className="btn btn-primary" onClick={handleSortToggle}>
+            {sortByTitle ? "Unsort" : "Sort by Title"}
+          </button>
+        </div> */}
     </div>
   );
 }

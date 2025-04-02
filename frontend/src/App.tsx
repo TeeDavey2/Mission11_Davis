@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CartPage from "./pages/CartPage";
 import { CartProvider } from "./context/CartContext";
 import "bootstrap/dist/css/bootstrap.min.css";
+import AdminBooksPage from "./pages/AdminBooksPage";
 function App() {
   //Making global functions
 
@@ -27,6 +28,8 @@ function App() {
               element={<BuyBookPage />}
             />
             <Route path="/cart" element={<CartPage />} />
+            <Route path="/adminbooks" element={<AdminBooksPage />} />
+            <Route path="*" element={<h1>404 Page Not Found</h1>} />
           </Routes>
         </Router>
       </CartProvider>
