@@ -1,4 +1,4 @@
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { deleteBook, fetchBooks } from "../api/BooksAPI";
 import { Book } from "../types/Book";
 import Pagination from "../components/Pagination";
