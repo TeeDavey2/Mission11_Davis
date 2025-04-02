@@ -1,4 +1,5 @@
 C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\publish\Mission11_Davis.API.exe
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\publish\publish\publish\web.config
 C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\publish\publish\web.config
 C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\publish\appsettings.Development.json
 C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\publish\appsettings.json
@@ -7,6 +8,11 @@ C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\publ
 C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\publish\publish\Mission11_Davis.API.deps.json
 C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\publish\publish\Mission11_Davis.API.runtimeconfig.json
 C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\publish\publish\Mission11_Davis.API.staticwebassets.endpoints.json
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\publish\publish\publish\appsettings.Development.json
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\publish\publish\publish\appsettings.json
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\publish\publish\publish\Mission11_Davis.API.deps.json
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\publish\publish\publish\Mission11_Davis.API.runtimeconfig.json
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\publish\publish\publish\Mission11_Davis.API.staticwebassets.endpoints.json
 C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\publish\Bookstore.sqlite
 C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\publish\Mission11_Davis.API.dll
 C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\publish\Mission11_Davis.API.deps.json
