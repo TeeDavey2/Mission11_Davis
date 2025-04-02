@@ -76,3 +76,15 @@ C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\bin\
 C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\bin\Debug\net8.0\publish\Mission11_Davis.API.deps.json
 C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\bin\Debug\net8.0\publish\Mission11_Davis.API.runtimeconfig.json
 C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\bin\Debug\net8.0\publish\Mission11_Davis.API.staticwebassets.endpoints.json
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\bin\Debug\net8.0\publish\publish\publish\web.config
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\bin\Debug\net8.0\publish\publish\web.config
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\bin\Debug\net8.0\publish\publish\appsettings.Development.json
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\bin\Debug\net8.0\publish\publish\appsettings.json
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\bin\Debug\net8.0\publish\publish\Mission11_Davis.API.deps.json
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\bin\Debug\net8.0\publish\publish\Mission11_Davis.API.runtimeconfig.json
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\bin\Debug\net8.0\publish\publish\Mission11_Davis.API.staticwebassets.endpoints.json
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\bin\Debug\net8.0\publish\publish\publish\appsettings.Development.json
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\bin\Debug\net8.0\publish\publish\publish\appsettings.json
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\bin\Debug\net8.0\publish\publish\publish\Mission11_Davis.API.deps.json
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\bin\Debug\net8.0\publish\publish\publish\Mission11_Davis.API.runtimeconfig.json
+C:\Users\GetTD\OneDrive\Desktop\Mission11_Davis\backend\Mission11_Davis.API\bin\Debug\net8.0\publish\publish\publish\Mission11_Davis.API.staticwebassets.endpoints.json
